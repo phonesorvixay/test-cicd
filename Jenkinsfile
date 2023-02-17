@@ -1,4 +1,5 @@
 pipeline {
+    agent:any
     //   agent {
     //     node {
     //         label 'my-node-label'
