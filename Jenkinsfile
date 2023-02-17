@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('/root/jenkins/develop') {
+                dir('develop') {
                     sh 'npm install'
                     sh 'npm build'
                 }
