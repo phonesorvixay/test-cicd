@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('/home/phones') {
+                dir('/home/jenkins/develop') {
                     sh 'npm install'
                     sh 'npm build'
                 }
