@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('/home/phone') {
+                // dir('develop') {
                     sh 'npm install'
-                    sh 'npm build'
-                }
+                //     // sh 'npm build'
+                // }
             }
         }
     }
