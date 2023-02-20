@@ -7,6 +7,7 @@ pipeline {
                     sh 'npm install'
                 //     // sh 'npm build'
                 // }
+                //asdfasdfasdf
             }
         }
     }
