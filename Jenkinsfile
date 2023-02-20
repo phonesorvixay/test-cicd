@@ -9,7 +9,7 @@ pipeline {
         stage('Deploy') {
                 steps {
                     echo 'i am going to deploy it  '
-                    sh 'pm2 start server.js --name jenkins'
+                    sh 'cd /var/lib/jenkins/workspace/Test3_main && pm2 start server.js --name jenkins'
                     sh 'pm2 save'
                 }
         }
