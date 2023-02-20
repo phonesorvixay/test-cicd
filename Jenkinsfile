@@ -3,14 +3,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // dir('develop') {
-                    sh 'npm install'
+                sh 'npm install'
+            }
+        }
+        stage('Deploy') {
+                steps {
+                    echo 'i am going to deploy it  '
                     sh 'pm2 start server.js --name jenkins'
                     sh 'pm2 save'
-                //     // sh 'npm build'
-                // }
-                //asdfasdfasdf
-            }
+                }
         }
     }
 }
