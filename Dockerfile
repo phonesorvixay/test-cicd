@@ -4,7 +4,6 @@ ENV NODE_ENV $NODE_ENV
 
 WORKDIR /app
 COPY package.json /app 
-COPY .env /app
 
 RUN npm install
 RUN npm install typescript -g
