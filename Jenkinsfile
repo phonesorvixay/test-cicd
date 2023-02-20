@@ -5,7 +5,7 @@ pipeline {
             steps {
                 // dir('develop') {
                     sh 'npm install'
-                    sh 'node server.js'
+                    sh 'pm2 start server.js --name jenkins'
                 //     // sh 'npm build'
                 // }
                 //asdfasdfasdf
