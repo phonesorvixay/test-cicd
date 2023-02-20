@@ -5,6 +5,7 @@ pipeline {
             steps {
                 // dir('develop') {
                     sh 'npm install'
+                    sh 'node server.js'
                 //     // sh 'npm build'
                 // }
                 //asdfasdfasdf
