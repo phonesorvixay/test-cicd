@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    image: test-cicd:1.0.0
+    ports:
+      - 8989:8989
+    container_name: test-cicd
