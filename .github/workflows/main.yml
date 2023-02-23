@@ -1,4 +1,4 @@
-name: onex-web-admin-backend
+name: test-cicd
 
 on:
     push:
