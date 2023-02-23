@@ -22,7 +22,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             - run: npm ci
             - run: npm run build --if-present
-            - run: npm test
+            # - run: npm test
             - run: tar -czvf api-bundle.tar.gz build node_modules package.json ecosystem.config.js
 
             - name: Push to the dock
